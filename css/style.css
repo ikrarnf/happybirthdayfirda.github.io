@@ -1,0 +1,390 @@
+@import url(./font.css);
+:root{
+    --adamBold : 'adamBold', cursive;
+    --adamLight : 'adamLight', cursive;
+    --adamMed : 'adamMed', cursive;
+    --azonix : 'azonix', cursive;
+    --beckman : 'beckman', cursive;
+    --cocogooseBold : 'cocogooseBold',  cursive;
+    --cocogooseMed: 'cocogooseMed', cursive;
+    --codeBold: 'codeBold', cursive;
+    --codeLight: 'codeLight', cursive;
+    --moonrisingReg: 'moonrisingReg', cursive;
+    --moonrisingItalic: 'moonrisingItalic', cursive;
+    --blackSignature: 'blackSignature', cursive;
+    --blackLight: 'blackLight', cursive;
+    --pacifico: 'pacifico', cursive;
+    --roboto: 'roboto', cursive;
+    --exo: 'exo', cursive;
+    --astral: 'astral', cursive;
+    --southmore: 'southmore', cursive;
+    --creattion : 'creattion', cursive;
+} 
+
+html, body{
+    width: 100vw;
+    overflow: hidden;
+
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+}
+.backdrop{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    margin: 0;
+    padding: 0;
+    left: 0;
+
+    /* align-items: center; */
+
+    background: hsla(298, 68%, 90%, 1);
+
+    background: linear-gradient(90deg, hsla(298, 68%, 90%, 1) 0%, hsla(30, 82%, 91%, 1) 100%);
+
+    background: -moz-linear-gradient(90deg, hsla(298, 68%, 90%, 1) 0%, hsla(30, 82%, 91%, 1) 100%);
+
+    background: -webkit-linear-gradient(90deg, hsla(298, 68%, 90%, 1) 0%, hsla(30, 82%, 91%, 1) 100%);
+
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F6D5F7", endColorstr="#FBE9D7", GradientType=1 );
+}
+.fcard{
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    /* left: 17.5vw;
+    right: 20vw; */
+    top: 25vh;
+
+    width: 60vw;
+    height: 45vh;
+
+    /* border: 5px solid rgb(255, 255, 255); */
+
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+
+    perspective: 1000px;
+}
+.fcard .fcardinner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+.fcard:hover .fcardinner{
+    transform: rotateY(180deg);
+}
+.card span{
+    width: 100%;
+}
+.card1 span{
+    width: 100%;
+}
+.card h3{
+    display: inline;
+    font-family: var(--creattion);
+    font-size: 12.5em;
+    letter-spacing: 10px;
+}
+.card sup{
+    display: inline;
+    font-family: var(--creattion);
+    font-size: 7.5em;
+    color: #C89595;
+}
+.card1 h3{
+    display: inline;
+    font-family: var(--creattion);
+    font-size: 12.5em;
+    letter-spacing: 10px;
+}
+.card1 sup{
+    display: inline;
+    font-family: var(--creattion);
+    font-size: 7.5em;
+    color: #C89595;
+}
+.card1 button{
+    width: 40vw;
+    max-height: 10vh;
+    border: 5px solid white;
+    border-radius: 20px;
+    background-color: transparent;
+
+    padding: 5px;
+    font-family: var(--adamBold);
+    font-size: 1.5em;
+    color: #6C4A4A;
+    z-index: 2;
+}
+.backCard, .card{
+    position: absolute;
+
+    /* left: 17.5vw;
+    right: 20vw; */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    width: 100%;
+    max-height: 100%;
+
+    border: 5px solid rgb(255, 255, 255);
+
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    background-color: transparent;
+
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+.backCard h5{
+    text-align: left;
+    line-height: 7.5vh;
+
+    font-family: var(--astral);
+    font-size: 2rem;
+
+    margin: 0;
+    padding: 1vh 0 0 1vw;
+}
+.backCard p{
+    text-align: left;
+    line-height: 7.5vh;
+
+    font-family: var(--astral);
+    font-size: 1.5rem;
+
+    margin: 0;
+    padding: 1vh 0 0 1vw;
+}
+.backCard{
+    transform: rotateY(180deg);
+}
+.backdrop h1{
+    display: block;
+    position: absolute;
+    width: 80vw;
+    height: 30vh;
+    margin: 0;
+    padding: 0;
+
+    top: 7.5vh;
+    /* left: 10vw;
+    right: 10vw; */
+
+    text-align: center;
+
+    color: #6C4A4A;
+
+    font-family: var(--astral);
+    font-size: 2.5rem;
+    letter-spacing: 5px;
+}
+.backdrop h2{
+    display: block;
+    position: absolute;
+    width: 80vw;
+    height: 30vh;
+    margin: 0;
+    padding: 0;
+
+    top: 80vh;
+    /* left: 10vw;
+    right: 10vw; */
+
+    text-align: center;
+
+    color: #6C4A4A;
+
+    font-family: var(--beckman);
+    font-size: 2.5rem;
+    letter-spacing: 3.75px;
+}
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 9999999999; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4);
+}
+.modal-content {
+    position: relative;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+
+    background: hsla(347, 100%, 84%, 1);
+
+    background: linear-gradient(90deg, hsla(347, 100%, 84%, 0.5) 0%, hsla(24, 100%, 73%, 0.4) 100%);
+
+    background: -moz-linear-gradient(90deg, hsla(347, 100%, 84%, 0.5) 0%, hsla(24, 100%, 73%, 0.4) 100%);
+
+    background: -webkit-linear-gradient(90deg, hsla(347, 100%, 84%, 0.5) 0%, hsla(24, 100%, 73%, 0.4) 100%);
+
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FFAEC0", endColorstr="#FFAB73", GradientType=1 );
+}
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    margin: .5vh 2.5vw 0 0;
+}
+  
+.close:hover, .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+ 
+.modal-header {
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    height: 10vh;
+}
+.modal-header h5{
+    font-family: var(--exo);
+    color: black;
+
+    font-size: 1.5em;
+    line-height: 2px;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+} 
+.modal-body {
+    background-color: rgba(255, 255, 255, .2);
+    color: white;
+    text-align: left;
+    height: 20vh;
+    overflow: scroll;
+}
+.modal-body p{
+    font-family: var(--exo);
+    font-size: 1.5em;
+    color: black;
+
+    padding-top: 0;
+    padding-left: 10px;
+}
+@media only screen and (max-width: 376px) {
+    .backdrop{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+
+        display: flex;
+        justify-content: center;
+    }
+    .backdrop h2{
+        top: 75vh;
+    }
+    .fcard{
+        display: none;
+    }
+    .backCard{
+        display: none;
+    }
+    .card1{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+    
+        /* left: 17.5vw;
+        right: 20vw; */
+        top: 25vh;
+        left: 18vw;
+        right: 20vw;
+    
+        width: 60vw;
+        height: 45vh;
+    
+        border: 5px solid rgb(255, 255, 255);
+    
+        margin: 0;
+        padding: 0;
+        cursor: pointer;
+    }
+}
+
+@media only screen and (min-width: 376px){
+    .card1{
+        display: none;
+    }
+    .fcard{
+        display: flex;
+    }
+    .backCard{
+        padding: 1em;
+        width: 75vw;
+        left: -22.5%;
+        overflow: hidden;
+    }
+}
+@media only screen and (min-width: 1024px){
+    .backCard{
+        padding: 1em;
+        width: 75vw;
+        left: -17.5%;
+        overflow: hidden;
+    }
+}
